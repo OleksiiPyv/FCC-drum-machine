@@ -1,0 +1,86 @@
+#root {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .drum-machine {
+        padding: 3rem;
+        width: 788px;
+        display: flex;
+        background-color: rgb(87, 123, 241);
+
+        &__set {
+            display: flex;
+            max-width: 60%;
+            flex-wrap: wrap;
+
+            &-item {
+                flex: calc(91% / 3);
+                width: 100px;
+                height: 100px;
+                margin: 5px;
+            }
+        }
+
+        &__controls {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            #display {
+                font-size: 3rem;
+                background-color: #fff;
+                width: 300px;
+                margin: 6px auto;
+            }
+
+            .drumKit {
+                font-size: 2rem;
+                width: 300px;
+            }
+
+            .power {
+                font-size: 2rem;
+                display: flex;
+                align-items: flex-end;
+
+                input {
+                    width: 0;
+                    height: 0;
+                    visibility: hidden;
+
+                    &:checked + .power__switch-slider {
+                        left: 36px;
+                    }
+                }
+
+                &__switch {
+                    display: inline-block;
+                    width: 70px;
+                    height: 36px;
+                    border-radius: 36px;
+                    background-color: white;
+                    position: relative;
+                    cursor: pointer;
+                    margin-left: 10px;
+
+                    &-slider {
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                        border-radius: 50%;
+                        display: block;
+                        height: 30px;
+                        width: 30px;
+                        background-color: rgb(87, 123, 241);
+                        transition: left .3s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}
