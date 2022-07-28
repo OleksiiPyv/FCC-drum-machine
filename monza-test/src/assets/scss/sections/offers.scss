@@ -1,0 +1,65 @@
+.offers {
+    padding: 100px 0;
+    background-color: $p-grey-light;
+
+    &__filters {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+
+        @media screen and (min-width: 992px) {
+            margin-top: 80px;
+        }
+    }
+
+    &__button {
+        @media screen and (min-width: 768px) {
+            margin: 0 10px;
+            flex: 45%;
+        }
+
+        @media screen and (min-width: 992px) {
+            flex: 30%;
+        }
+
+        @media screen and (min-width: 1400px) {
+            flex: unset;
+            margin: 0;
+        }
+    }
+
+    &__sort,
+    &__items {
+        margin: 24px 0 0;
+    }
+
+    &__sort {
+
+        @media screen and (min-width: 768px) {
+            margin: 24px 10px 10px;
+        }
+
+        @media screen and (min-width: 1400px) {
+            margin: 24px 0 0;
+        }
+
+        &-by {
+            display: flex;
+            align-items: center;
+
+            &-text {
+                font: 400 12px / 1.35em $p-font-primary;
+                margin: 0 16px 0 0;
+            }
+        }
+
+        &-available {
+            margin: 0 0 20px;
+            @media screen and (min-width: 577px) {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.questions {
+    padding: 100px 0 150px;
+    background-color: $p-grey-light;
+
+    &__container {
+        max-width: 820px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,108 @@
+@import "./components/button.scss";
+@import "./components/select.scss";
+@import "./components/card.scss";
+@import "./components/dropdown.scss";
+@import "./components/collapse.scss";
+
+.section-header {
+    font: 700 25px/1.5em $p-font-secondary;
+    text-align: center;
+    color: $p-grey;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-size: 50px;
+    }
+}
+
+.checkbox {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+
+    &-label {
+        font: 400 12px/20px $p-font-primary;
+        color: $p-grey-dark;
+        cursor: pointer;
+        padding: 0 28px;
+        position: relative;
+        user-select: none;
+
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $p-grey-dark;
+            left: 0;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        &::after {
+            box-sizing: border-box;
+            display: block;
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 5px;
+            width: 6px;
+            height: 9px;
+            border-style: solid;
+            border-color: $p-grey-light;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+            z-index: 100;
+        }
+    }
+
+    &:checked ~ .checkbox-label {
+        &::before {
+            background-color: $p-brand;
+            border-color: $p-brand;
+        }
+    }
+}
+
+// typography
+
+%h1 {
+    font: 700 50px/1.236em $p-font-primary;
+}
+
+%h2 {
+    font: 700 50px/1.5em $p-font-secondary;
+}
+
+%h3 {
+    font: 600 30px/1.5em $p-font-primary;
+}
+
+%h4 {
+    font: 600 25px/1.36em $p-font-primary;
+}
+
+%h5 {
+    font: 500 20px/1.35em $p-font-primary;
+}
+
+%h6 {
+    font: 400 17px/1.35em $p-font-primary;
+}
+
+%button1 {
+    font: 500 20px/1.35em $p-font-primary;
+}
+
+%button2 {
+    font: 400 15px/1.33em $p-font-primary;
+}
+
+%forms {
+    font: 400 15px/1.33em $p-font-primary;
+}
+
+%span2 {
+    font: 300 15px/1.36em $p-font-primary;
+}

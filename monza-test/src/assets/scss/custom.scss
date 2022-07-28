@@ -1,0 +1,69 @@
+@import "../scss/variables.scss";
+
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+
+$gray-100: $p-grey-light;
+
+$body-color: $p-grey-light;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1264px,
+);
+
+$body-color: $p-grey-light;
+
+$font-family-sans-serif: "Noto Sans";
+
+$headings-font-family: "Noto Sans";
+$headings-font-weight: 700;
+$headings-color: $p-grey-light;
+$h1-font-size: 50px;
+
+$display-font-family: "Poppins";
+
+$enable-cssgrid: true;
+
+$link-color: $p-grey-light;
+$navbar-dark-color: $p-grey-light;
+$navbar-dark-hover-color: darken($navbar-dark-color, 20);
+$navbar-dark-active-color: lighten($navbar-dark-color, 20);
+$navbar-dark-disabled-color: darken($navbar-dark-color, 80);
+$navbar-nav-link-padding-x: 1.35em;
+$nav-link-font-size: 15px;
+$nav-link-font-weight: 500;
+
+$dropdown-font-size: 12px;
+$dropdown-header-color: $p-grey-dark;
+$dropdown-border-color: $white;
+$dropdown-border-radius: $p-border-radius;
+$dropdown-link-hover-color: $p-brand;
+$dropdown-link-hover-bg: transparent;
+
+$input-padding-y: 14px;
+$input-border-radius: $p-border-radius;
+$input-placeholder-color: $p-grey-light;
+$input-bg: transparent;
+
+@import "/node_modules/bootstrap/scss/maps";
+@import "/node_modules/bootstrap/scss/mixins";
+@import "/node_modules/bootstrap/scss/utilities";
+
+@import "/node_modules/bootstrap/scss/utilities/api";
+
+@import "/node_modules/bootstrap/scss/root";
+@import "/node_modules/bootstrap/scss/reboot";
+@import "/node_modules/bootstrap/scss/type";
+@import "/node_modules/bootstrap/scss/images";
+@import "/node_modules/bootstrap/scss/containers";
+@import "/node_modules/bootstrap/scss/grid";
+@import "/node_modules/bootstrap/scss/dropdown";
+@import "/node_modules/bootstrap/scss/transitions";
+@import "/node_modules/bootstrap/scss/forms";
+
+@import "/node_modules/bootstrap/scss/nav";
+@import "/node_modules/bootstrap/scss/navbar";

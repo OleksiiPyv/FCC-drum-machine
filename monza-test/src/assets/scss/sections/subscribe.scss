@@ -1,0 +1,35 @@
+.subscribe {
+    background: #000000;
+    box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+    padding: 40px 0;
+
+    &__text {
+        text-align: center;
+        margin: 0 0 20px;
+
+        @media screen and (min-width: 992px) {
+            text-align: left;
+            max-width: 505px;
+            margin: 0;
+        }
+        &-header {
+            @extend %h4;
+            color: $p-grey-light;
+            margin: 0 0 20px;
+        }
+
+        &-content {
+            @extend %forms;
+            color: $p-grey-light;
+            margin: 10px 0 0;
+        }
+    }
+
+    &__input {
+        &:focus {
+            &::placeholder {
+                color: $p-grey-dark;
+            }
+        }
+    }
+}

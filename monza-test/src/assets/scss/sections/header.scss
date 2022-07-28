@@ -1,0 +1,48 @@
+.main-banner {
+    min-height: 688px;
+    padding: 8px 0 148px;
+    background: url("../../img/main-bg.png") top center / cover no-repeat;
+
+    @media screen and (min-width: 1200px) {
+        background-position-x: right;
+    }
+
+    &__header {
+        margin-top: 2.36em;
+        text-align: left;
+    }
+
+    &__text {
+        margin-top: 32px;
+
+        &-item {
+            font: 400 15px/20px $p-font-primary;
+            color: $p-grey-light;
+
+            @media screen and (min-width: 768px) {
+                max-width: 295px;
+            }
+
+            &:last-child {
+                margin-left: 0;
+
+                @media screen and (min-width: 768px) {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 64px;
+        height: 56px;
+    }
+}
+
+.nav-link {
+    &-facebook,
+    &-instagram {
+        width: 18px;
+        height: 18px;
+    }
+}

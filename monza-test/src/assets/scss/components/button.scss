@@ -1,0 +1,101 @@
+.button {
+    display: block;
+    text-align: center;
+    border-radius: $p-border-radius;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+
+    &_thin {
+        font: 400 15px/1em $p-font-primary;
+        padding: 12px 0;
+        height: 48px;
+
+        @media screen and (min-width: 577px) {
+            padding: 14px 0;
+        }
+    }
+
+    &_thick {
+        font: 500 15px/1em $p-font-primary;
+        padding: 14px 0;
+
+        @media screen and (min-width: 577px) {
+            font-size: 20px;
+        }
+    }
+
+    &_fixed {
+        @media screen and (min-width: 577px) {
+            max-width: 240px;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        max-width: 290px;
+    }
+    &-primary {
+        border-color: $p-grey-light;
+        color: $p-grey-light;
+        background-color: transparent;
+
+        &:hover {
+            color: $p-black;
+            background-color: $p-grey-light;
+        }
+
+        &:active {
+            color: $p-grey-light;
+            border-color: $p-grey-light;
+            background-color: transparent;
+        }
+    }
+
+    &-secondary {
+        color: $p-grey-light;
+        background-color: $p-brand;
+        border-color: $p-brand;
+
+        &:hover {
+            color: $p-brand;
+            background-color: $p-grey-light;
+        }
+
+        &:active {
+            color: $p-grey-light;
+            border-color: $p-brand;
+            background-color: $p-brand;
+        }
+    }
+
+    &-tertiary {
+        background-color: $p-grey-light;
+        border-color: $p-grey-light;
+        color: $p-black;
+        padding: 17px 0;
+        font: 400 15px/16px $p-font-primary;
+
+        @media screen and (min-width: 1400px) {
+            max-width: 190px;
+        }
+
+        &:hover {
+            color: $p-grey-light;
+            background-color: transparent;
+        }
+
+        &:active {
+            background-color: $p-grey-light;
+            border-color: $p-grey-light;
+            color: $p-black;
+        }
+    }
+}
